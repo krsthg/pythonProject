@@ -21,10 +21,8 @@
 </style>
 </head>
 <body>
-<img src="l.png">
-    <div align="center">
-        <img src="logo3.png"  style="width:300px; padding:20px;" >
-        </div>
+{% include "header.html" %}
+{% load static %}
 
 
     <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
@@ -37,13 +35,13 @@
 
         <div class="carousel-inner">
             <div class="item active">
-                <img src="1.png" class="img-responsive center-block">
+                <a href="#"><img src="{% static '1.png' %}" class="img-responsive center-block" width="1000px"></a>
             </div>
             <div class="item">
-                <img src="2.png" class="img-responsive center-block">
+                <a href="#"><img src="{% static '1.png' %}" class="img-responsive center-block" width="1000px"></a>
             </div>
             <div class="item">
-                <img src="3.png" class="img-responsive center-block"></div>
+                <a href="#"><img src="{% static '1.png' %}" class="img-responsive center-block" width="1000px"></a></div>
 
         </div>
         <a class="left carousel-control" href="#myCarousel" data-slide="prev">
@@ -52,7 +50,7 @@
         <a class="right carousel-control" href="#myCarousel" data-slide="next">
             <span class="glyphicon glyphicon-cheyron-right"></span>
         </a>
-    </div><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div><br><br><br><br><br>
     <div align="center">
     <h2>이 사이트는</h2>
     <h4>설명<br>
@@ -64,38 +62,35 @@
         설명<br>
     </h4></div>
 
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br>
 
-    <table align="center">
-        <tr><td><img src="p1.png" width="300px;" ></td>
-        <td><img src="p2.png" width="300px;" ></td>
-        <td><img src="p3.png" width="300px;" ></td>
-        <td><img src="p4.png" width="300px;" ></td>
-        <td><img src="p5.png" width="300px;" ></td>
+    <table align="center" >
+        <tr ><td><img src="{% static 'p1.png' %}" width="200px;" style="padding:10px;" ></td>
+        <td><img src="{% static 'p2.png' %}" width="200px;" style="padding:10px;"></td>
+        <td><img src="{% static 'p3.png' %}" width="200px;" style="padding:10px;"></td>
+        <td><img src="{% static 'p4.png' %}" width="200px;" style="padding:10px;"></td>
+            <td><img src="{% static 'p5.png' %}" width="200px;" style="padding:10px;"></td></tr>
 
 
         <tr style="font-size:35px; text-align:center">
         <td><a href="#">단어</a></td>
         <td><a href="#">사자성어</a></td>
-        <td><a href="#">신조어&줄임말</a></td>
-        <td><a href="#">유행어</a></td>
         <td><a href="#">속담</a></td>
+        <td><a href="#">줄임말</a></td>
+        <td><a href="#">유행어</a></td></tr>
 
         <tr style="font-size:15px; text-align:center">
-        <td>백만개가 넘는</td>
-        <td>알아두면 좋은</td>
-        <td>이런게있앗넹</td>
-        <td>요즘 유행하는 단어</td>
-        <td>속속담담속담속담담속</td></tr>
+        <td>ㄷㅏㄴㅇㅓ</td>
+        <td>사자성어</td>
+        <td>속담</td>
+        <td>줄임말</td>
+        <td>유행어</td></tr>
     </table>
 
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br>
 
-
-
-        <img src="l.png">
-
+    <div align="center"><img src="{% static 'l.png' %}"></div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 </body>

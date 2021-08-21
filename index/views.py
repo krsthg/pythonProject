@@ -4,3 +4,18 @@ from django.http import HttpResponse
 from django.shortcuts import render
 def index(request):
     return render(request, 'index.html')
+
+def login(request):
+    return render(request, 'login.html')
+
+def join(request):
+    return render(request, 'join.html')
+
+def board(request):
+    return render(request, 'board.html')
+
+def write(request):
+    return render(request, 'write.html')
+
+def boardview(request):
+    return render(request, 'boardview.html')

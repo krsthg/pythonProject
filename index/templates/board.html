@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!--웹폰트-->
+    <style>
+@font-face {
+    font-family: 'NEXON Lv1 Gothic OTF Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+    *{font-family: 'NEXON Lv1 Gothic OTF Bold'}
+
+    /*캐러셀 버튼의 그라데이션 없애기*/
+    .carousel-control{background: none !important;}
+</style>
+</head>
+<body>
+{% include "header.html" %}
+    <div class="container">
+        <h2>공지🖋</h2>
+        <div align="right">
+<div class="container">
+    <div align="right">
+        <a href="write"> <button class="btn btn-outline-info">글쓰기</button></a>
+    </div>
+    <table class="table table-striped">
+        <thead>
+        <th>번호</th><th>제목</th><th>작성자</th><th>조회수</th>
+        </thead>
+        <tbody>
+        <tr><td>4</td><td>[설문조사]언제 이 사이트를 이용하시나요?</td><<td>관리자</td><td>8</td></tr>
+            <tr> <td>3</td><td>[투표]추가되었으면 하는 내용</td><td>관리자</td><td>28</td></tr>
+           <tr><td>2</td><td>문의 내용및 일부 답변</td><td>관리자</td><td>12</td></tr>
+           <tr><td>1</td><td><a href="boardview">[단사신유속] 이용 안내</a></td><td>관리자</td><td>32</td></tr>
+        </tbody>
+    </table>
+</div>
+<!-- 검색 버튼-->
+<table style="margin : 0 auto">
+    <tr>
+        <td>
+            <select class="form-control">
+                <option>날짜</option>
+                <option>제목</option>
+                <option>작성자</option>
+            </select>
+        </td>
+
+    <td><input type="text" class="form-contorl" placeholder="검색어 입력"></td>
+    <td><input type="submit" value="검색" class="btn btn-outline-info"></td>
+    </tr>
+</table>
+        </div>
+    </div>
+
+</body>
+</html>

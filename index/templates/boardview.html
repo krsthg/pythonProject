@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!--웹폰트-->
+    <style>
+@font-face {
+    font-family: 'NEXON Lv2 Gothic Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+    *{font-family: 'NEXON Lv2 Gothic Light.woff'}
+
+    /*캐러셀 버튼의 그라데이션 없애기*/
+    .carousel-control{background: none !important;}
+</style>
+</head>
+<body>
+{% include "header.html" %}
+    <div class="container">
+        <h2>[단사신유속] 이용 안내</h2><br><p align="right">작성자: 관리자</p>
+        <p> [단사신유속]은 단어, 사자성어, 신조어, 유행어, 속담 등 알아두면 좋은 단어&말 등을 모아둔 사이트 입니다. 이용 방법은 아래와 같습니다.<br><br>
+            1. 사이트 이용 전, 로그인혹은 회원가입을 해주세요.<br>
+        2. 자신이 찾거나 알고싶은 단어들을 검색하세요.<br>
+        3. 종류별로 나눠져 있어 찾기 쉬우실 겁니다1!<br><br>
+            ※문의는 공지 게시판에 있는 2번째 글을 이용해주시길 바랍니다.
+            <br><br>
+            감사합니다 :D
+        </p>
+        <div align="right">
+
+        <a href="board"><button type="button" class="btn btn-outline-primary">공지 게시판으로 이동</button></a></div>
+</div>
+</body>
+</html>

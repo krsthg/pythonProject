@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!--웹폰트-->
+    <style>
+@font-face {
+    font-family: 'NEXON Lv2 Gothic Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+    *{font-family: 'NEXON Lv2 Gothic Light.woff'}
+
+    /*캐러셀 버튼의 그라데이션 없애기*/
+    .carousel-control{background: none !important;}
+</style>
+</head>
+<body>
+<!-- 헤더파일 포함시키기 -->
+{% include "header.html" %}
+{% load static %}
+<div class="container"> <!-- 1200px 가로 상자-->
+    <!-- 컨테이너 상자 안에서 구역 나누기[12조각]-->
+    <div class="col-lg-4"></div>
+    <div class="col-lg-4">
+    <div align="center"><img src="{% static 'logo.png' %}"  style="width:200px">
+    </div>
+        <div align="center"><h2>회원가입</h2></div>
+    <form>
+        <input type="text" class="form-control" placeholder="ID"><br>
+        <input type="password" class = "form-control" placeholder="Password"><br>
+        <input type="password" class = "form-control" placeholder="Password check"><br>
+        <input type="email" class = "form-control" placeholder="Email"><br>
+        <input type="submit" value="join :D!" class="form-control">
+    </form>
+</div>
+</div>
+</body>
+</html>

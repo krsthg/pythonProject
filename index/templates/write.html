@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!--웹폰트-->
+    <style>
+@font-face {
+    font-family: 'NEXON Lv1 Gothic OTF Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+    *{font-family: 'NEXON Lv1 Gothic OTF Bold'}
+
+    /*캐러셀 버튼의 그라데이션 없애기*/
+    .carousel-control{background: none !important;}
+</style>
+</head>
+<body>
+{% include "header.html" %}
+{% load static %}
+
+
+    <div class="container" align="center"><h2>게시글 작성📃</h2><br><form style="width: 600px">
+
+
+        <tr><td >제목</td>
+            <td><input type="text" class="form-control" placeholder="제목을 입력해주세요"></td></tr><br>
+        <tr><td>작성자</td>
+            <td><input type="text" class="form-control" placeholder="아이디를 입력해주세요"></td></tr><br>
+        <tr><td>내용</td>
+            <td><textarea rows="10" class="form-control" style="resize:none;"></textarea></td></tr>
+
+        <div align="right"><input type="submit" value="게시하기" class="btn btn-outline-info">
+        <a href="board"><button type="button" class="btn btn-outline-primary">공지 게시판으로 이동</button></a></div>
+    </form></div>
+
+</body>
+</html>
