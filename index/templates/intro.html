@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!--웹폰트-->
+    <style>
+@font-face {
+    font-family: 'NEXON Lv2 Gothic Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+    *{font-family: 'NEXON Lv2 Gothic Light.woff'}
+
+    /*캐러셀 버튼의 그라데이션 없애기*/
+    .carousel-control{background: none !important;}
+    </style>
+</head>
+<body>
+{% include "header.html" %}
+{% load static %}
+<div>
+    <div class="container">
+        <h2><img src="{% static 'logo.png' %}" width="200px;" style="padding:10px;">에 방문해주셔서 감사합니다 :) </h2>
+
+        <div class="col-lg-6">
+            <h2>제작의도</h2>
+                        <h4>일상생활에서 한정된 단어를 사용하시는 분들,<br><br> 그러한 단어들로 인해 표현에 한계가 있으신 분들,<br><br>
+        또 말을 하려다가도 멈칫하시는 분들,<br><br> 말의 미묘한 차이를 헷갈리시는 분들 또한 계십니다.<br><br>
+        [단사신유속]에는 이러한 분들께서 더 많은 단어와 표현을<br><br> 알고가셨으면 하는 제작의도가 담겨져 있습니다.</h4>
+        </div>
+        <div class="col-lg-6">
+            <img src="{% static 'intro2.jpg' %}" height="300" >
+        </div>
+    </div>
+    <br><br><br>
+<div>
+    <div class="container">
+        <div class="col-lg-6">
+            <h2>이용방법</h2>
+            <h4>이용 방법은 간단합니다! <br><br>
+            표현의 종류는 단어, 사자성어, 속담, 줄임말, 유행어 입니다.<br><br>
+            자신이 알고자 하는 표현의 종류에 따라 항목을 클릭한 후 둘러보시면 됩니다.<br><br>
+                둘러보던 중 흥미로운 단어가 있으시다면<br><br> 그 단어를 클릭해 더 자세히 아실 수 있습니다.
+            </h4>
+        </div>
+        <div class="col-lg-6">
+            <img src="{% static 'intro3.jpg' %}" height="300" width="450">
+        </div>
+    </div>
+<div  style="background-color:#000002; margin-top:100px">
+{% include "footer.html" %}></div>
+
+</body>
+</html>

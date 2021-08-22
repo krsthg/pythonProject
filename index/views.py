@@ -19,3 +19,6 @@ def write(request):
 
 def boardview(request):
     return render(request, 'boardview.html')
+
+def intro(request):
+    return render(request, 'intro.html')

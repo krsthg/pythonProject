@@ -1,10 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+        <meta charset="UTF-8">
     <title>Title</title>
-</head>
-<body>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
 
+    <!--웹폰트-->
+    <style>
+@font-face {
+    font-family: 'NEXON Lv1 Gothic OTF Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+    *{font-family: 'NEXON Lv1 Gothic OTF Bold'}
+
+    /*캐러셀 버튼의 그라데이션 없애기*/
+    .carousel-control{background: none !important;}
+</style>
+</head>
+{% load static %}
+<body>
+<br>
+<div align="center">
+<div class="container">
+    <div class="col-lg-4" style="color: white">
+       <img src="{% static 'logo.png' %}" style="width:150px;">
+    </div>
+        <div class="col-lg-4"  style="color: white">
+            <table style="margin-top:10px; border-spacing:10px;">
+                <tr>
+                    <td width="100px">연락처  </td> <td>010 2190 9724</td>
+                </tr>
+                <tr>
+                    <td width="100px">이메일</td> <td>ypseoha@naver.com</td>
+                </tr>
+                <tr>
+                    <td width="100px">찾아오는 길</td> <td> 서울</td>
+                </tr>
+            </table>
+    </div>
+        <div class="col-lg-4"  style="color: white">
+            <table style="margin-top:10px; border-spacing:10px;">
+                <tr>
+                    <td><img src="{% static 'sns1.png' %}" style="width:30px"> 김서하 </td> </tr>
+                  <tr>  <td><img src="{% static 'sns2.png' %}" style="width:30px"> krsthg</td> </tr>
+                </tr>
+            </table>
+    </div>
+</div></div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 </body>
 </html>
