@@ -24,4 +24,4 @@ def intro(request):
     return render(request, 'intro.html')
 
 def detail(request):
-    return render((request, 'detail.html')
+    return render(request, 'detail.html')
