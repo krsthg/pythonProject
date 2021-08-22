@@ -22,3 +22,6 @@ def boardview(request):
 
 def intro(request):
     return render(request, 'intro.html')
+
+def detail(request):
+    return render((request, 'detail.html')
