@@ -25,3 +25,9 @@ def intro(request):
 
 def word(request):
     return render(request, 'word.html')
+
+def Idiomatic(request):
+    return render(request, 'Idiomatic.html')
+
+def Proverb(request):
+    return render(request, 'Proverb.html')

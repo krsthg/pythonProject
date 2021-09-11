@@ -9,4 +9,6 @@ path('write', views.write),
 path('boardview', views.boardview),
 path('intro', views.intro),
     path('word', views.word),
+    path('Idiomatic', views.Idiomatic),
+path('Proverb', views. Proverb),
 ]
