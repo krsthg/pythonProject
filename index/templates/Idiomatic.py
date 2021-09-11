@@ -14,7 +14,6 @@ while True:  # 무한 입력받기
     for Idiomatics in tag:
         if i.text:  # 출력
             print("출시가:", i.text)
-            # 아니면 출력 X
 
     with open('Idiomatics.html', 'w') as f:
         f.write('<html><body>')
