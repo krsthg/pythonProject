@@ -12,11 +12,8 @@ while True:  # 무한 입력받기
     tag2 = soup.find_all('ul', {"class":"mean.list"})
 
     for Idiomatics in tag:
-        if i.text:  # 출력
-            print("출시가:", i.text)
-
-    with open('Idiomatics.html', 'w') as f:
-        f.write('<html><body>')
-        for w in Idiomatics:
-            f.write(w+'<br>')
-        f.write('</body></html>')
+        with open('Idiomatics.html', 'w') as f:
+            f.write('<html><body>')
+            for w in Idiomatics:
+                f.write(w+'<br>')
+            f.write('</body></html>')
