@@ -11,9 +11,9 @@ while True:  # 무한 입력받기
     soup2 = bs(html.read(), 'html.parser')
     tag2 = soup.find_all('ul', {"class":"mean.list"})
 
+with open('Idiomatics.html', 'w') as f:
     for Idiomatics in tag:
-        with open('Idiomatics.html', 'w') as f:
-            f.write('<html><body>')
-            for w in Idiomatics:
-                f.write(w+'<br>')
+        f.write('<html><body>')
+        for w in Idiomatics:
+            f.write(w+'<br>')
             f.write('</body></html>')

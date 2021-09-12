@@ -31,3 +31,9 @@ def Idiomatic(request):
 
 def Proverb(request):
     return render(request, 'Proverb.html')
+
+def Abbreviation(request):
+    return render(request, 'Abbreviation.html')
+
+def Idiom(request):
+    return render(request, 'Idiom.html')
