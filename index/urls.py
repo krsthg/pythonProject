@@ -13,4 +13,5 @@ path('Idiomatic', views.Idiomatic),
 path('Proverb', views. Proverb),
 path('Abbreviation', views.Abbreviation),
 path('Idiom', views.Idiom),
-]
+path('A2', views.A2),
+path('I2', views.I2),]

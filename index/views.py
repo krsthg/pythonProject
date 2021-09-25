@@ -37,3 +37,9 @@ def Abbreviation(request):
 
 def Idiom(request):
     return render(request, 'Idiom.html')
+
+def A2(request):
+    return render(request, 'A2.html')
+
+def I2(request):
+    return render(request, 'I2.html')
