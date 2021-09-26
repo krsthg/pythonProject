@@ -71,3 +71,23 @@ def W6(request):
 def W7(request):
     return render(request, 'W7.html')
 
+def W8(request):
+    return render(request, 'W8.html')
+
+def W9(request):
+    return render(request, 'W9.html')
+
+def W10(request):
+    return render(request, 'W10.html')
+
+def W11(request):
+    return render(request, 'W11.html')
+
+def W12(request):
+    return render(request, 'W12.html')
+
+def W13(request):
+    return render(request, 'W13.html')
+
+def W14(request):
+    return render(request, 'W14.html')
