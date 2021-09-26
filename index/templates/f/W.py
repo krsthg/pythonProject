@@ -1,5 +1,5 @@
 words = []
-with open('단어.txt','r', encoding='utf-8') as f:
+with open('../단어.txt', 'r', encoding='utf-8') as f:
     info = f.readlines()
     for i in info:
         if i[0] =='[':
