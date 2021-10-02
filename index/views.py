@@ -44,6 +44,42 @@ def A2(request):
 def I2(request):
     return render(request, 'I2.html')
 
+def I3(request):
+    return render(request, 'I3.html')
+
+def I4(request):
+    return render(request, 'I4.html')
+
+def I5(request):
+    return render(request, 'I5.html')
+
+def I6(request):
+    return render(request, 'I6.html')
+
+def I7(request):
+    return render(request, 'I7.html')
+
+def I8(request):
+    return render(request, 'I8.html')
+
+def I9(request):
+    return render(request, 'I9.html')
+
+def I10(request):
+    return render(request, 'I10.html')
+
+def I11(request):
+    return render(request, 'I11.html')
+
+def I12(request):
+    return render(request, 'I12.html')
+
+def I13(request):
+    return render(request, 'I13.html')
+
+def I14(request):
+    return render(request, 'I14.html')
+
 def Id2(request):
     return render(request, 'Id2.html')
 
