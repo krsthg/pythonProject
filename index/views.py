@@ -127,3 +127,6 @@ def W13(request):
 
 def W14(request):
     return render(request, 'W14.html')
+
+def P2(request):
+    return render(request, 'P2.html')

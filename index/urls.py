@@ -42,4 +42,5 @@ path('I11', views.I11),
 path('I12', views.I12),
 path('I13', views.I13),
 path('I14', views.I14),
+path('P2', views.P2)
 ]
