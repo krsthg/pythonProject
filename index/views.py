@@ -130,3 +130,36 @@ def W14(request):
 
 def P2(request):
     return render(request, 'P2.html')
+
+def Id4(request):
+    return render(request, 'Id4.html')
+
+def Id5(request):
+    return render(request, 'Id5.html')
+
+def Id6(request):
+    return render(request, 'Id6.html')
+
+def Id7(request):
+    return render(request, 'Id7.html')
+
+def Id8(request):
+    return render(request, 'Id8.html')
+
+def Id9(request):
+    return render(request, 'Id9.html')
+
+def Id10(request):
+    return render(request, 'Id10.html')
+
+def Id11(request):
+    return render(request, 'Id11.html')
+
+def Id12(request):
+    return render(request, 'Id12.html')
+
+def Id13(request):
+    return render(request, 'Id13.html')
+
+def Id14(request):
+    return render(request, 'Id14.html')
